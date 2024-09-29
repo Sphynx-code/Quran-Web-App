@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    padding: 12px;
+    font-weight: 600;
+}
+.body-color-changed{
+  background-color: #0f0e17;
+  color: #fffffe;
+}
+.navbar-color-default{
+  background-color: #ffd803;
+  color: #272343;
+}
+.navbar-color-changed{
+  background-color: #ff8906;
+  color: #fffffe;
+}
+
+a,ul{
+    margin-right: 15px;
+    font-size: 20px;
+}
+.collapse{
+  justify-content: space-between;
+}
+
+/* From Uiverse.io by TimTrayler */ 
+.switch {
+  --secondary-container: #3a4b39;
+  --primary: #84da89;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.7em;
+  height: 1.8em;
+ }
+ 
+ .switch input {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+ }
+ 
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #313033;
+  transition: .2s;
+  border-radius: 30px;
+ }
+ 
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #aeaaae;
+  transition: .4s;
+ }
+ 
+ input:checked + .slider::before {
+  background-color: var(--primary);
+ }
+ 
+ input:checked + .slider {
+  background-color: var(--secondary-container);
+ }
+ 
+ input:focus + .slider {
+  box-shadow: 0 0 1px var(--secondary-container);
+ }
+ 
+ input:checked + .slider:before {
+  transform: translateX(1.9em);
+ }
+ .mainText{
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+}
+.mainText-default{
+  background-color: #bae8e8;
+}
+.mainText-changed{
+  background-color: #f25f4c;
+  color: white;
+}
+.tafsir{
+  font-size: 18px;
+  padding: 20px;
+}
+.padd{
+  padding: 5px;
+}

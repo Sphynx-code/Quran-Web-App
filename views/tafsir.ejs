@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Web App</title>
+    <%- include("partials/header.ejs") %>
+</head>
+<body>
+
+    <h4>
+        <% if(locals.tafsir) {%>
+            <div class="mainText mainText-default">
+                <p style="font-size: 19px;"><%= tafsir %></p>
+            </div>
+            
+    </h4><% }else{ %>
+        <h4>Error fetching tafsir</h4>
+        <% } %>
+
+</body>
+</html>

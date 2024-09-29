@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Web App</title>
+        <!-- including headere.js file so now all content in header will be rendered before the hero section -->
+        <%- include("partials/header.ejs") %>
+</head>
+<body>
+<% if(locals.verse && locals.verseKey){ %>
+    <div class="mainText mainText-default">
+        <p><%= verse %></p> <br>
+        <h3><%= verseKey %></h3>
+        <div class="buttons">
+<a href="/tafsir/<%=verseKey%>"><button type="button" class="btn btn-success">Get Tafsir</button></a>
+        </div>
+    </div>
+
+    <% } else{%>
+        <h1> There was a problem. please come after sometime</h1>
+        <% } %>
+
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2">Features</h2>
+        <hr style="border: 5px solid;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="col d-flex align-items-start" style="margin-right: 25px;">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Random Quran Verse</h3>
+                  <p>Get a random quran verse on the home page with tafsir</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start" style="margin-right: 25px;">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Get Verse By Key</h3>
+                  <p>Get verse by verse key with tafsir</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Set a goal and SAVE IT</h3>
+                  <p>You can use the verses saver feature to set a goal and complete that goal for the verses you have read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- no need to insert script file here since script file is already inserted in header.ejs file so this will be automatically connected to that and i can chnage the theme from there-->
+ <br>
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

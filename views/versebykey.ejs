@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Web App</title>
+    <%- include("partials/header.ejs") %>
+</head>
+<body>
+    <div class="mainText mainText-default">
+    <form action="/submit" method="POST">
+        <h3>Input chapter Number:</h3>
+        <input type="number" name="chapter" id="" class="padd" required min="1" max="114"><br><br>
+     <h3>Input verse Number:</h3>  
+        <input type="number" name="verse" id="" class="padd" required min="1" max="286"><br><br>
+        <input type="submit" value="Search" class="btn btn-success">
+    </form>
+    </div>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

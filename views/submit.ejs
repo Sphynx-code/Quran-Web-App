@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Web App</title>
+    <%- include ("partials/header.ejs") %>
+</head>
+<body>
+    <div class="mainText mainText-default">
+        <% if(locals.verse && locals.verseKey) {%>
+            <p><%= verse %></p> <br>
+        <h3><%= verseKey %></h3>
+        <div class="buttons">
+<a href="/tafsir/<%=verseKey%>"><button type="button" class="btn btn-success">Get Tafsir</button></a>
+        </div><% }else{ %>
+            <h1> please input correct verse keys</h1>
+        <% } %>
+
+    </div>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

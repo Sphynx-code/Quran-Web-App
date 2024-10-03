@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware to serve static files
 app.use(express.static("public"));
-
+app.set('trust proxy', true);
 // Axios configuration for fetching a random verse
 const config = {
   method: 'get',

@@ -19,7 +19,7 @@ Follow the steps below to run this application locally on your machine.
 First, clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/quran-web-app.git
+git clone https://github.com/Sphynx-code/Quran-Web-App.git
 ```
 ### 2. Navigate to the Project Directory
 After cloning the repository, navigate into the project folder:

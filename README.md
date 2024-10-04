@@ -31,6 +31,12 @@ Once inside the project directory, install the required Node.js dependencies usi
 ```bash
 npm install
 ```
+###4. Run the Application
+After the dependencies are installed, you can start the application by running: 
+```bash
+node index.js
+```
+
 ### 5. Access the Application
 Open your web browser and navigate to:
 ```bash

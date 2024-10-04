@@ -31,7 +31,7 @@ Once inside the project directory, install the required Node.js dependencies usi
 ```bash
 npm install
 ```
-###5. Access the Application
+### 5. Access the Application
 Open your web browser and navigate to:
 ```bash
 http://localhost:3000
